@@ -36,7 +36,7 @@ module.exports = (ng) ->
           data = for i in [0...values.length] by 2
             [
               parseInt values[i+1]
-              adjustValue parseInt(values[i]), info
+              adjustValue parseFloat(values[i]), info
             ]
 
           # TODO big nono: DOM access inside controller!
